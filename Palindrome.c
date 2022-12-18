@@ -9,9 +9,9 @@ int n,s=0,r,q;
             q=q/10;
         }
         if(s==n){
-            printf("True");
+            printf("Palindrome");
         }
         else{
-            printf("False");
+            printf("Not Palindrome");
         }
 }
