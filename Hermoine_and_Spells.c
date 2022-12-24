@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+    int a,b,c,x,y,z;
+    scanf("%d%d%d",&a,&b,&c);
+    x=a+b,y=a+c,z=b+c;
+    if(x>y&&x>z){
+        printf("%d",x);
+    }
+    else if(y>z&&y>x){
+        printf("%d",y);
+    }
+    else{
+        printf("%d",z);
+    }
+}
