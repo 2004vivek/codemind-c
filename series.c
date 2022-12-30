@@ -1,24 +1,19 @@
 #include<stdio.h>
 #include<math.h>
 int main(){
-    int n,i,p1=-1,y=0,a,b;
+    int n,k1=1,k2=1,a,b,i;
     scanf("%d",&n);
-    for(i=0;i<n;i++){
+    for(i=0;i<=n;i++){
         if(i%2==0){
-            if(p1==-1){
-                printf("0 ");
-                p1++;
-            }
-            else{
-                a=pow(2,p1);
-                printf("%d ",a);
-                p1++;
-            }
+            a=pow(2,k1)-1;
+            printf("%d ",a);
+            k1++;
+            
         }
         else{
-            b=pow(3,y);
+            b=pow(3,k2)-1;
             printf("%d ",b);
-            y++;
+            k2++;
         }
     }
 }
