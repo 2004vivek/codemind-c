@@ -10,7 +10,7 @@ int main(){
     }
     for(i=0;i<r;i++){
         for(j=0;j<c;j++){
-            if(i==0||j==0||i==r-1||j==c-1){
+            if(i==0||i==r-1||j==0||j==c-1){
                 s=s+a[i][j];
             }
         }
